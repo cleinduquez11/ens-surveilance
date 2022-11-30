@@ -1,0 +1,35 @@
+
+<%- include('header') -%>
+
+
+<div class="text-center center-div" id="login">
+    <div class="container w-25 border py-5 style">
+        <div class="title pb-5">
+            <h2 class="font-weight-bold">ENS Surveilance Page</h2>
+            <span>This webpage is for Cpe admin(s) Only</span>
+            <% if(locals.logout){ %>
+                <div class="alter alert-success text-center">
+                    <%= logout %>
+                </div>
+            <% } %>
+        </div>
+        <form action="/route/login" method="get" class="pt-3">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username" name="email">
+                <!-- <small class="form-text text-muted text-left">Admin(s) Username Only</small> -->
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+                <br>
+            <div>
+                <button type="submit" class="btn btn-success rounded-pill " style=" background-color: #0084b4; border-color: #0084b4;">LOG IN</button>
+
+            </div>
+          
+        </form>
+    </div>
+</div>
+
+
+<%- include('footer') -%>

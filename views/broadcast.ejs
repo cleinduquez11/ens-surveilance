@@ -1,0 +1,77 @@
+<%- include('header') -%>
+
+
+
+<section class="select">
+    <label for="audioSource" hidden>Audio source: </label>
+    <select id="audioSource" hidden></select>
+  </section>
+
+  <section class="select">
+    <label for="videoSource" hidden>Video source: </label>
+    <select id="videoSource" hidden></select>
+  </section>
+  <br>
+  <br>
+  <br>
+<center>
+  <video playsinline autoplay muted ></video>
+
+
+</center>
+
+
+<center>
+  <div>
+    Recording format: <select id="codecPreferences"  disabled></select>
+</div>
+
+
+</center>
+ 
+<center>
+  <div class="vertical-center">
+    <button id="recordButton1">Start Recording</button>
+    <button id="playButton1" disabled >Play</button>
+    <button id="downloadButton1" disabled >Download</button>
+    <button id="upload1" disabled >Upload Video</button>
+</div>
+
+
+</center>
+
+<center>
+
+  
+  <video id="recorded" playsinline loop></video>
+</center>
+
+
+  
+</div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/broadcast.js"></script>
+  <script src="/bundle.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('footer') -%>
