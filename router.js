@@ -39,6 +39,11 @@ router.get('/dashboard', (req, res) => {
 })
 
 
+router.get('/jigweidjn12jvnr19dimj21ev1hnvr12dmj102jv1090m9sj1092jv102j01754342Vb1JBjn2IHjnfjfgsjbgljsfbgiebfnjkablfdjabflijdbfaijfijfbhadfbahdsufbkhdvfhdvfvuerbfewubf1ib2iwbdiu1eh241iuwbdjbdqw',(req,res) => {
+
+res.render('dashboard')
+})
+
 router.get('/error', (req, res) => {
     res.render('error',{title: "Error Prompt"})
 })

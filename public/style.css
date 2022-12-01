@@ -2,10 +2,11 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-image: url('/assets/My project-1.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: wheat;
+    background-color: white;
+ overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .center-div{
@@ -40,3 +41,16 @@ form{
 video{
     
 } */
+
+
+/*
+video.gum {
+ position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 50%;
+  min-height: 50%;
+
+} */ 
+
+
